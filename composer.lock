@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c7b2b7fad24a89054471394e0908f15",
+    "content-hash": "8b7070e018c8f0b6e197f38db2efdc53",
     "packages": [
         {
             "name": "brick/math",
@@ -1524,72 +1524,6 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.1.25"
             },
             "time": "2024-08-12T22:06:33+00:00"
-        },
-        {
-            "name": "laravel/sanctum",
-            "version": "v3.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sanctum.git",
-                "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/8c104366459739f3ada0e994bcd3e6fd681ce3d5",
-                "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/console": "^9.21|^10.0",
-                "illuminate/contracts": "^9.21|^10.0",
-                "illuminate/database": "^9.21|^10.0",
-                "illuminate/support": "^9.21|^10.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^7.28.2|^8.8.3",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.6"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sanctum\\SanctumServiceProvider"
-                    ]
-                },
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sanctum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
-            "keywords": [
-                "auth",
-                "laravel",
-                "sanctum"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/sanctum/issues",
-                "source": "https://github.com/laravel/sanctum"
-            },
-            "time": "2023-12-19T18:44:48+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -4144,6 +4078,89 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "8bb69d6d67387f7a00d93a2f5fab98860f06e704"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/8bb69d6d67387f7a00d93a2f5fab98860f06e704",
+                "reference": "8bb69d6d67387f7a00d93a2f5fab98860f06e704",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^1.0|^2.0",
+                "laravel/passport": "^11.0|^12.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.4|^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.10.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-11-08T18:45:41+00:00"
         },
         {
             "name": "symfony/console",
