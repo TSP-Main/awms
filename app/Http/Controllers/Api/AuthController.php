@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Spatie\Permission\Models\Role;
+use Illuminate\Http\Request;
+
 
 class AuthController extends BaseController
 {
@@ -80,6 +83,18 @@ class AuthController extends BaseController
             return $this->sendResponse([], 'User logged out successfully.');
         }
         return $this->sendError(['error' => ['Invalid operation.']]);
+    }
+    // Create role
+    public function createRole(Request $request)
+    {
+        $request->validate([
+            'name' => 'required'
+        ]);
+        $role = Role::create(['name' => $request->name]);
+        if(!$role){
+            return $this->sendError(['error' => 'Failed to create role']);
+        }
+        return $this->sendResponse($role, 'Role has been created successfully');
     }
 
 }
